@@ -1,0 +1,122 @@
+<project name="gdav" default="package" basedir=".">
+
+	<property name="version" value="1.2.4"/>
+
+	<property name="build" value="${basedir}/build"/>
+	<property name="build.bin" value="gdav-${version}"/>
+	<property name="build.src" value="gdav_src-${version}"/>
+	<property name="build.bin.tar" value="${build}/${build.bin}.tar"/>
+	<property name="build.src.tar" value="${build}/${build.src}.tar"/>
+	<property name="build.bin.tgz" value="${build}/${build.bin}.tgz"/>
+	<property name="build.src.tgz" value="${build}/${build.src}.tgz"/>
+
+	<property name="webapp.dir" value="${basedir}/gdav-webapp/"/>
+	<property name="webapp.war" value="${webapp.dir}/gdav.war"/>
+	<property name="db-utils.dir" value="${basedir}/gdav-db-utils/"/>
+	<property name="tutorial.dir" value="${basedir}/gdav-tutorial/"/>
+	<property name="das-server.dir" value="${basedir}/gdav-das-server/"/>
+	<property name="das-server.war" value="${das-server.dir}/das.war"/>
+
+	<!-- package -->
+	<target name="webapp">
+		<ant antfile="${webapp.dir}/build.xml" inheritAll="false" target="war" />
+	</target>
+
+	<target name="das">
+		<ant antfile="${das-server.dir}/build.xml" inheritAll="false" target="war" />
+	</target>
+
+        <target name="init">
+                <mkdir dir="${basedir}/build"/>
+        </target>
+
+        <target name="clean">
+                <delete dir="${basedir}/build"/>
+        </target>
+
+        <target name="cleanall" depends="clean">
+ 		<ant antfile="${das-server.dir}/build.xml" inheritAll="false" target="clean" />
+		<ant antfile="${webapp.dir}/build.xml" inheritAll="false" target="clean" />
+	</target>
+
+
+	<target name="package" depends="init,webapp,das">
+		<tar destfile="${build.bin.tar}">
+			<tarfileset 	dir="${tutorial.dir}"
+					prefix="${build.bin}/gdav-tutorial"
+					preserveLeadingSlashes="true">
+				<exclude name="**/.svn"/>
+			</tarfileset>
+			<tarfileset 	dir="${db-utils.dir}"
+					prefix="${build.bin}/gdav-db-utils"
+					preserveLeadingSlashes="true">
+				<exclude name="**/.svn"/>
+			</tarfileset>
+			<tarfileset 	dir="${basedir}"
+					prefix="${build.bin}/"
+					preserveLeadingSlashes="true">
+				<include name="README"/>
+			</tarfileset>	
+
+			
+			<tarfileset 	dir="${das-server.dir}"
+					prefix="${build.bin}/webapps/"
+					preserveLeadingSlashes="true">
+				<include name="das.war"/>
+			</tarfileset>
+			<tarfileset 	dir="${webapp.dir}"
+					prefix="${build.bin}/webapps/"
+					preserveLeadingSlashes="true">
+				<include name="gdav.war"/>
+			</tarfileset>
+			<tarfileset 	dir="${webapp.dir}/sql/"
+					prefix="${build.bin}/sql/"
+					preserveLeadingSlashes="true">
+				<include name="*.sql"/>
+			</tarfileset>		</tar>		
+		
+		<gzip	zipfile="${build.bin.tgz}"
+			src="${build.bin.tar}"
+		/>
+		<delete file="${build.bin.tar}" />
+		
+	</target>
+
+	<target name="package_src" depends="init">
+		<tar destfile="${build.src.tar}">
+			<tarfileset 	dir="${tutorial.dir}"
+					prefix="${build.src}/gdav-tutorial"
+					preserveLeadingSlashes="true">
+				<exclude name="**/.svn"/>
+			</tarfileset>
+			<tarfileset 	dir="${db-utils.dir}"
+					prefix="${build.src}/gdav-db-utils"
+					preserveLeadingSlashes="true">
+				<exclude name="**/.svn"/>
+			</tarfileset>
+			<tarfileset 	dir="${basedir}"
+					prefix="${build.src}/"
+					preserveLeadingSlashes="true">
+				<include name="build.xml"/>
+				<include name="README"/>
+			</tarfileset>	
+
+			<tarfileset 	dir="${das-server.dir}"
+					prefix="${build.src}/gdav-das-server"
+					preserveLeadingSlashes="true">
+				<exclude name="**/.svn"/>
+			</tarfileset>
+			<tarfileset 	dir="${webapp.dir}"
+					prefix="${build.src}/gdav-webapp"
+					preserveLeadingSlashes="true">
+				<exclude name="**/.svn"/>
+			</tarfileset>
+		</tar>
+		
+		<gzip	zipfile="${build.src.tgz}"
+			src="${build.src.tar}"
+		/>
+		<delete file="${build.src.tar}" />
+	</target>
+
+</project>

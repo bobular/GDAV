@@ -1,0 +1,48 @@
+<project name="gdav-das-server" default="war" basedir=".">
+
+   <property name="src.dir" value="${basedir}/src"/>
+   <property name="webapp" value="${basedir}/webapp"/>
+   <property name="webapp.classes" value="${webapp}/WEB-INF/classes"/>
+   <property name="webapp.lib" value="${webapp}/WEB-INF/lib"/>
+
+	 <!-- build path -->
+
+	 <path id="webapp.jars">
+		 <fileset dir="${webapp.lib}">
+			 <include name="**/*.jar"/>
+		 </fileset>
+	 </path>
+
+	 <path id="build.path">
+		 <pathelement location="${webapp.classes}"/>
+		 <path refid="webapp.jars"/>
+	 </path>
+
+
+   <!-- compile -->
+
+   <target name="compile">
+   <mkdir dir="${webapp.classes}"/>
+   <javac srcdir="${src.dir}"
+      destdir="${webapp.classes}"
+      classpathref="build.path"
+      debug="on"
+   />
+   </target>
+
+   <!-- war -->
+
+ 	 <target name="war" depends="compile">
+		 <war destfile="das.war" webxml="${webapp}/WEB-INF/web.xml" basedir="${webapp}">
+	   </war>
+	 </target>
+
+	 <!-- clean -->
+
+	 <target name="clean">
+		<delete file="das.war"/>
+		<delete dir="${webapp.classes}"/>
+	 </target>
+
+
+</project>

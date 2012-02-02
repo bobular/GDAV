@@ -1,0 +1,77 @@
+#headers	translation	length (AA)	analysis type	analysis domain ID	analysis description	query start	query end	e-value	true hit	date	InterPro ID	InterPro description	GO terms
+TCLAA083948	ORF11 (+1)	167	HMMPanther	PTHR23115:SF4	EUKARYOTIC TRANSLATION ELONGATION FACTOR 2	5	166	3.9e-99	T	14-Aug-2007			
+TCLAA083948	ORF11 (+1)	167	HMMPanther	PTHR23115	TRANSLATION FACTOR	5	166	3.9e-99	T	14-Aug-2007			
+TCLAA108437	ORF1 (+1)	2142	HMMPanther	PTHR23345	VITELLOGENIN-RELATED	633	757	2.9e-09	T	14-Aug-2007			
+TCLAA108437	ORF1 (+1)	2142	HMMPanther	PTHR23345	VITELLOGENIN-RELATED	775	989	2.9e-09	T	14-Aug-2007			
+TCLAA088857	ORF2 (+1)	428	HMMPanther	PTHR11815	SUCCINYL-COA SYNTHETASE BETA CHAIN	3	427	3.1e-237	T	14-Aug-2007	IPR005809	Succinyl-CoA synthetase, beta subunit	Molecular Function: catalytic activity (GO:0003824), Biological Process: metabolic process (GO:0008152)
+TCLAA111852	ORF3 (+2)	388	HMMPanther	PTHR11937	ACTIN	42	388	1.5e-298	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA083948	ORF2 (+2)	731	HMMPanther	PTHR23115:SF4	EUKARYOTIC TRANSLATION ELONGATION FACTOR 2	378	722	3.5e-266	T	14-Aug-2007			
+TCLAA083948	ORF2 (+2)	731	HMMPanther	PTHR23115	TRANSLATION FACTOR	378	722	3.5e-266	T	14-Aug-2007			
+TCLAA104855	ORF6 (+2)	679	HMMPanther	PTHR10937	GLUCOSAMINE--FRUCTOSE-6-PHOSPHATE AMINOTRANSFERASE	6	679	0	T	14-Aug-2007			
+TCLAA108437	ORF1 (+1)	2142	Gene3D	G3DSA:2.30.230.10	no description	89	370	1.5e-49	T	14-Aug-2007			
+TCLAA108437	ORF1 (+1)	2142	Gene3D	G3DSA:1.25.10.20	no description	594	940	1.4e-84	T	14-Aug-2007			
+TCLAA083948	ORF11 (+1)	167	Gene3D	G3DSA:3.30.70.240	no description	37	150	1.2e-33	T	14-Aug-2007	IPR000640	Translation elongation factor EFG/EF2, C-terminal	Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	Gene3D	G3DSA:3.40.50.300	no description	53	237	4.3e-42	T	14-Aug-2007			
+TCLAA083948	ORF2 (+2)	731	Gene3D	G3DSA:2.40.30.10	no description	387	522	2.4e-55	T	14-Aug-2007			
+TCLAA083948	ORF2 (+2)	731	Gene3D	G3DSA:3.30.70.870	no description	523	587	2.3e-22	T	14-Aug-2007			
+TCLAA104855	ORF6 (+2)	679	Gene3D	G3DSA:3.60.20.10	no description	6	292	1.4e-59	T	14-Aug-2007			
+TCLAA104855	ORF6 (+2)	679	Gene3D	G3DSA:3.40.50.10490	no description	312	531	1.7e-74	T	14-Aug-2007			
+TCLAA111852	ORF3 (+2)	388	Gene3D	G3DSA:3.30.420.40	no description	14	153	1.6e-67	T	14-Aug-2007			
+TCLAA111852	ORF3 (+2)	388	Gene3D	G3DSA:3.90.640.10	no description	195	281	1.1e-38	T	14-Aug-2007			
+TCLAA111852	ORF3 (+2)	388	Gene3D	G3DSA:3.30.420.40	no description	322	388	4.9e-10	T	14-Aug-2007			
+TCLAA088857	ORF2 (+1)	428	Gene3D	G3DSA:3.30.470.20	no description	127	281	4.9e-52	T	14-Aug-2007	IPR013816	ATP-grasp fold, subdomain 2	Molecular Function: catalytic activity (GO:0003824), Molecular Function: ATP binding (GO:0005524)
+TCLAA088857	ORF2 (+1)	428	Gene3D	G3DSA:3.40.50.261	no description	282	426	2.3e-58	T	14-Aug-2007			
+TCLAA108437	ORF1 (+1)	2142	HMMSmart	SM00638	no description	89	912	0	T	14-Aug-2007	IPR001747	Lipid transport protein, N-terminal	Molecular Function: lipid transporter activity (GO:0005319), Biological Process: lipid transport (GO:0006869)
+TCLAA111852	ORF3 (+2)	388	HMMSmart	SM00268	no description	18	388	7.2e-243	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA108437	ORF1 (+1)	2142	ProfileScan	PS51211	VITELLOGENIN	89	981	39.817	T	14-Aug-2007	IPR001747	Lipid transport protein, N-terminal	Molecular Function: lipid transporter activity (GO:0005319), Biological Process: lipid transport (GO:0006869)
+TCLAA108437	ORF1 (+1)	2142	ProfileScan	PS51233	VWFD	1743	1990	23.044	T	14-Aug-2007	IPR001846	von Willebrand factor, type D	
+TCLAA108437	ORF1 (+1)	2142	ScanRegExp	PS00070	ALDEHYDE_DEHYDR_CYS	1944	1955	NA	?	14-Aug-2007	IPR002086	Aldehyde dehydrogenase	Biological Process: metabolic process (GO:0008152), Molecular Function: oxidoreductase activity (GO:0016491)
+TCLAA083948	ORF2 (+2)	731	ScanRegExp	PS00301	EFACTOR_GTP	96	111	8e-5	T	14-Aug-2007	IPR000795	Protein synthesis factor, GTP-binding	Molecular Function: GTPase activity (GO:0003924), Molecular Function: GTP binding (GO:0005525)
+TCLAA104855	ORF6 (+2)	679	ScanRegExp	PS00443	GATASE_TYPE_II	1	10	NA	?	14-Aug-2007	IPR000583	Glutamine amidotransferase, class-II	Biological Process: metabolic process (GO:0008152)
+TCLAA111852	ORF3 (+2)	388	ScanRegExp	PS00406	ACTINS_1	66	76	8e-5	T	14-Aug-2007	IPR004001	Actin	Molecular Function: ATP binding (GO:0005524)
+TCLAA111852	ORF3 (+2)	388	ScanRegExp	PS00432	ACTINS_2	369	377	8e-5	T	14-Aug-2007	IPR004001	Actin	Molecular Function: ATP binding (GO:0005524)
+TCLAA111852	ORF3 (+2)	388	ScanRegExp	PS01132	ACTINS_ACT_LIKE	117	129	8e-5	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA088857	ORF2 (+1)	428	ScanRegExp	PS01217	SUCCINYL_COA_LIG_3	299	323	8e-5	T	14-Aug-2007	IPR005809	Succinyl-CoA synthetase, beta subunit	Molecular Function: catalytic activity (GO:0003824), Biological Process: metabolic process (GO:0008152)
+TCLAA088857	ORF1 (-1)	36	ScanRegExp	PS01186	EGF_2	1	12	NA	?	14-Aug-2007	IPR013032	EGF-like region	
+TCLAA083948	ORF2 (+2)	731	FPrintScan	PR00315	ELONGATNFCT	59	72	2.3e-13	T	14-Aug-2007	IPR000795	Protein synthesis factor, GTP-binding	Molecular Function: GTPase activity (GO:0003924), Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	FPrintScan	PR00315	ELONGATNFCT	103	111	2.3e-13	T	14-Aug-2007	IPR000795	Protein synthesis factor, GTP-binding	Molecular Function: GTPase activity (GO:0003924), Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	FPrintScan	PR00315	ELONGATNFCT	143	153	2.3e-13	T	14-Aug-2007	IPR000795	Protein synthesis factor, GTP-binding	Molecular Function: GTPase activity (GO:0003924), Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	FPrintScan	PR00315	ELONGATNFCT	159	170	2.3e-13	T	14-Aug-2007	IPR000795	Protein synthesis factor, GTP-binding	Molecular Function: GTPase activity (GO:0003924), Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	FPrintScan	PR00315	ELONGATNFCT	195	204	2.3e-13	T	14-Aug-2007	IPR000795	Protein synthesis factor, GTP-binding	Molecular Function: GTPase activity (GO:0003924), Molecular Function: GTP binding (GO:0005525)
+TCLAA111852	ORF3 (+2)	388	FPrintScan	PR00190	ACTIN	39	48	6.2e-58	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA111852	ORF3 (+2)	388	FPrintScan	PR00190	ACTIN	62	73	6.2e-58	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA111852	ORF3 (+2)	388	FPrintScan	PR00190	ACTIN	74	96	6.2e-58	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA111852	ORF3 (+2)	388	FPrintScan	PR00190	ACTIN	128	141	6.2e-58	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA111852	ORF3 (+2)	388	FPrintScan	PR00190	ACTIN	153	172	6.2e-58	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA111852	ORF3 (+2)	388	FPrintScan	PR00190	ACTIN	249	265	6.2e-58	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA108437	ORF1 (+1)	2142	superfamily	SSF48431	Lipovitellin-phosvitin complex, superhelical domain	563	945	4.1e-68	T	14-Aug-2007	IPR011030	Lipovitellin, superhelical	
+TCLAA108437	ORF1 (+1)	2142	superfamily	SSF56968	Lipovitellin-phosvitin complex; beta-sheet shell regions	88	395	5.3e-57	T	14-Aug-2007			
+TCLAA108437	ORF1 (+1)	2142	superfamily	SSF56968	Lipovitellin-phosvitin complex; beta-sheet shell regions	944	1394	1.4e-31	T	14-Aug-2007			
+TCLAA083948	ORF11 (+1)	167	superfamily	SSF54980	EF-G C-terminal domain-like	49	167	2.9e-30	T	14-Aug-2007	IPR009022	Elongation factor G, III and V	
+TCLAA083948	ORF11 (+1)	167	superfamily	SSF54211	Ribosomal protein S5 domain 2-like	5	48	1.5e-14	T	14-Aug-2007			
+TCLAA083948	ORF2 (+2)	731	superfamily	SSF52540	P-loop containing nucleoside triphosphate hydrolases	41	383	8e-119	T	14-Aug-2007			
+TCLAA083948	ORF2 (+2)	731	superfamily	SSF54211	Ribosomal protein S5 domain 2-like	601	726	3.8e-53	T	14-Aug-2007			
+TCLAA083948	ORF2 (+2)	731	superfamily	SSF50447	Translation proteins	384	521	8.9e-45	T	14-Aug-2007	IPR009000	Translation elongation and initiation factors/Ribosomal, beta-barrel	
+TCLAA083948	ORF2 (+2)	731	superfamily	SSF54980	EF-G C-terminal domain-like	522	600	4.1e-24	T	14-Aug-2007	IPR009022	Elongation factor G, III and V	
+TCLAA104855	ORF6 (+2)	679	superfamily	SSF53697	SIS domain	314	679	2.3e-135	T	14-Aug-2007			
+TCLAA104855	ORF6 (+2)	679	superfamily	SSF56235	N-terminal nucleophile aminohydrolases (Ntn hydrolases)	6	291	2.8e-69	T	14-Aug-2007			
+TCLAA111852	ORF3 (+2)	388	superfamily	SSF53067	Actin-like ATPase domain	160	388	2.6e-100	T	14-Aug-2007			
+TCLAA111852	ORF3 (+2)	388	superfamily	SSF53067	Actin-like ATPase domain	14	159	2.5e-67	T	14-Aug-2007			
+TCLAA088857	ORF2 (+1)	428	superfamily	SSF56059	Glutathione synthetase ATP-binding domain-like	36	274	3.8e-59	T	14-Aug-2007			
+TCLAA088857	ORF2 (+1)	428	superfamily	SSF52210	Succinyl-CoA synthetase domains	281	428	2.2e-51	T	14-Aug-2007			
+TCLAA088857	ORF2 (+1)	428	HMMPIR	PIRSF001554	Succinyl-CoA synthetase, beta subunit	37	428	4.7e-228	T	14-Aug-2007	IPR005809	Succinyl-CoA synthetase, beta subunit	Molecular Function: catalytic activity (GO:0003824), Biological Process: metabolic process (GO:0008152)
+TCLAA108437	ORF1 (+1)	2142	HMMPfam	PF01347	Vitellogenin_N	89	912	0	T	14-Aug-2007	IPR001747	Lipid transport protein, N-terminal	Molecular Function: lipid transporter activity (GO:0005319), Biological Process: lipid transport (GO:0006869)
+TCLAA108437	ORF1 (+1)	2142	HMMPfam	PF00094	VWD	1906	1932	1.5e-06	T	14-Aug-2007	IPR001846	von Willebrand factor, type D	
+TCLAA083948	ORF11 (+1)	167	HMMPfam	PF03764	EFG_IV	7	44	3.5e-14	T	14-Aug-2007	IPR005517	Translation elongation factor EFG/EF2, domain IV	Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF11 (+1)	167	HMMPfam	PF00679	EFG_C	46	136	5.8e-35	T	14-Aug-2007	IPR000640	Translation elongation factor EFG/EF2, C-terminal	Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	HMMPfam	PF00009	GTP_EFTU	55	386	1.4e-87	T	14-Aug-2007	IPR000795	Protein synthesis factor, GTP-binding	Molecular Function: GTPase activity (GO:0003924), Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	HMMPfam	PF03144	GTP_EFTU_D2	433	510	1.7e-14	T	14-Aug-2007	IPR004161	Translation elongation factor EFTu/EF1A, domain 2	Molecular Function: GTP binding (GO:0005525)
+TCLAA083948	ORF2 (+2)	731	HMMPfam	PF03764	EFG_IV	644	731	2.5e-13	T	14-Aug-2007	IPR005517	Translation elongation factor EFG/EF2, domain IV	Molecular Function: GTP binding (GO:0005525)
+TCLAA104855	ORF6 (+2)	679	HMMPfam	PF00310	GATase_2	6	261	5.4e-47	T	14-Aug-2007	IPR000583	Glutamine amidotransferase, class-II	Biological Process: metabolic process (GO:0008152)
+TCLAA104855	ORF6 (+2)	679	HMMPfam	PF01380	SIS	360	492	7.3e-40	T	14-Aug-2007	IPR001347	Sugar isomerase (SIS)	Molecular Function: sugar binding (GO:0005529), Biological Process: carbohydrate metabolic process (GO:0005975)
+TCLAA104855	ORF6 (+2)	679	HMMPfam	PF01380	SIS	531	665	2.9e-27	T	14-Aug-2007	IPR001347	Sugar isomerase (SIS)	Molecular Function: sugar binding (GO:0005529), Biological Process: carbohydrate metabolic process (GO:0005975)
+TCLAA111852	ORF3 (+2)	388	HMMPfam	PF00022	Actin	15	388	1.2e-258	T	14-Aug-2007	IPR004000	Actin/actin-like	Molecular Function: protein binding (GO:0005515)
+TCLAA088857	ORF2 (+1)	428	HMMPfam	PF08442	ATP-grasp_2	38	245	1.2e-109	T	14-Aug-2007	IPR013650	ATP-grasp fold, succinyl-CoA synthetase-type	
+TCLAA088857	ORF2 (+1)	428	HMMPfam	PF00549	Ligase_CoA	288	424	1.9e-79	T	14-Aug-2007	IPR005811	ATP-citrate lyase/succinyl-CoA ligase	Molecular Function: catalytic activity (GO:0003824), Biological Process: metabolic process (GO:0008152)
+TCLAA104855	ORF6 (+2)	679	HMMTigr	TIGR01135	glmS: glucosamine--fructose-6-phosphate amin	6	679	1.7e-209	T	14-Aug-2007	IPR005855	Glucosamine-fructose-6-phosphate aminotransferase, isomerising	Molecular Function: glutamine-fructose-6-phosphate transaminase (isomerizing) activity (GO:0004360), Cellular Component: cytoplasm (GO:0005737), Biological Process: carbohydrate biosynthetic process (GO:0016051)
+TCLAA088857	ORF2 (+1)	428	HMMTigr	TIGR01016	sucCoAbeta: succinyl-CoA synthetase, beta	37	428	7.6e-157	T	14-Aug-2007	IPR005809	Succinyl-CoA synthetase, beta subunit	Molecular Function: catalytic activity (GO:0003824), Biological Process: metabolic process (GO:0008152)

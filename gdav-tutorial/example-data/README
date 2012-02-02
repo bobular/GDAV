@@ -1,0 +1,82 @@
+Example data
+============
+
+The example data uses five EST cluster sequences from AedEST v2
+http://web.bioinformatics.ic.ac.uk/vectorbase/AedEST.v2/index.php
+that we knew had similarity to Anopheles gambiae.
+
+We have then done some very simple search-based annotation for
+illustrative purposes.  Some notes are provided below - they
+may or may not be of use to you.
+
+The directory 'xxx' indicates external locations of large datafiles
+(e.g. genomic sequence) or software that we do not distribute with this
+package.  The main programs, e.g. blastall, exonerate, are assumed
+to be in your shell's executable path.
+
+
+
+InterProScan
+------------
+
+1. produce raw output
+
+  iprscan -cli -i fasta/Aedes5.fasta -o raw_output/Aedes5.iprscan.raw -seqtype n -iprlookup -goterms -verbose -format raw
+
+2. convert to TSV
+
+  ../utility_scripts/iprscan-raw-to-tsv.pl -ignore Seg,Coil raw_output/Aedes5.iprscan.raw > tsv/Aedes5.iprscan.tsv
+
+
+exonerate (v1.4.0) coding2genome vs AgamP3 repeatmasked genome
+---------
+
+1. produce raw output
+
+  exonerate --model coding2genome --softmasktarget yes --score 500 --bestn 1 --maxintron 10000 --showtargetgff yes fasta/Aedes5.fasta xxx/AgamP3_all_chromosomes_soft_masked_short_ids.fasta > raw_output/Aedes5-vs-AgamP3.coding2genome.out
+
+2. convert to TSV
+
+  ../utility_scripts/reformat-exonerate-targetgff-to-gff3.pl raw_output/Aedes5-vs-AgamP3.coding2genome.out > gff3/Aedes5-vs-AgamP3.coding2genome.gff3
+
+
+blastx vs AgamP3.4 peptides
+------
+
+Note that formatdb has already been run on the target database.
+
+1. produce raw output
+
+  blastall -p blastx -e 0.00001 -i fasta/Aedes5.fasta -d xxx/agambiae.PEPTIDE-ALL.AgamP3.4.fa > raw_output/Aedes5-vs-AgamP3.4.blastx.out
+
+2. convert to TSV
+
+  ../utility_scripts/blastx-top-hit-to-tsv.pl raw_output/Aedes5-vs-AgamP3.4.blastx.out > tsv/Aedes5-vs-AgamP3.4.blastx-best.tsv
+
+tblastx vs AgamP3 repeatmasked genome
+-------
+
+Note that formatdb has already been run on the target database.
+
+1. produce raw output
+
+  blastall -p tblastx -e 0.00001 -i fasta/Aedes5.fasta -d xxx/AgamP3_all_chromosomes_Xmasked.fasta > raw_output/Aedes5-vs-AgamP3.tblastx.out
+
+2. convert to TSV
+
+Here you need to install BioPerl and find BioPerl's search2gff utility script.
+
+  perl xxx/search2gff.PLS -f blast -t hit -i raw_output/Aedes5-vs-AgamP3.tblastx.out -v 3 > gff3/Aedes5-vs-AgamP3.tblastx.gff3
+
+
+cluster info
+------------
+
+1. produce TSV directly
+
+MySQL query on our in-house aedest_v2 database:
+
+  select distinct id, acc into outfile "/tmp/Aedes5.cluster-info.tsv" from est2cluster left join stable_cluster_ids on (cl_id = curr_clid) where id in ('TCLAA108437','TCLAA083948','TCLAA104855','TCLAA111852','TCLAA088857');
+
+  add column headings in text editor, save as tsv/Aedes5.cluster-info.tsv
+

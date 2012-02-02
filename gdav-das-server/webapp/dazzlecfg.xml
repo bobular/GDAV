@@ -1,0 +1,61 @@
+<!--
+ 
+  Example configuration file for the GDAV DAS server
+
+  This DAS server is based on Dazzle by Thomas Down.
+  http://www.derkholm.net/thomas/dazzle/
+
+  -->
+
+<!-- comments look like this -->
+
+
+<dazzle xmlns="http://www.biojava.org/2000/dazzle">
+
+  <!-- You may have as many datasource sections as you like.
+       Each must have a different id.
+       Do not change the jclass parameter for GDAV data sources.
+    -->
+  <datasource id="gdav_example" jclass="org.vectorbase.gdav.dazzle.AlignmentSource">
+
+    <!-- the following information is provided to people who are browsing DAS
+         sources from your DAS server -->
+    <string name="name" value="GDAV test data" />
+    <string name="description" value="Some Aedes aegypti EST clusters aligned to AgamP3" />
+    <string name="version" value="default" />
+
+    <!-- this is the assembly name that you provided to
+          db_scripts/load-alignments-from-gff.pl
+      -->
+    <string name="assembly" value="AgamP3" />
+
+    <!-- Change this to the URL of your gdav server.
+         These are the links back from the genome browser to your annotations.
+      -->
+    <string name="linkout" value="http://your.server.org:8080/gdav-example/?m=" />
+
+    <!-- optional parameter to specify which species to serve -->
+    <!-- if using a multi-species GDAV -->
+    <!-- <string name="species" value="Anopheles albimanus" />  -->
+
+    <!-- group features by location rather than alignment ID - useful for -->
+    <!-- proteomics data - default is "alignment" -->
+    <!-- <string name="groupmode" value="location" />  -->
+
+    <!-- this is the login information for your mysql database -->
+    <string name="dbhost" value="localhost" />
+    <string name="dbport" value="3306" />
+    <string name="dbuser" value="username" />
+    <string name="dbpass" value="password" />
+    <!-- this is the mysql database that stores the data -->
+    <string name="dbname" value="gdav_example_db" />
+
+    <!-- change the following only if you know what you are doing -->
+    <string name="stylesheet" value="empty.style" />
+
+  </datasource>
+
+  <!-- You may add further non-GDAV data sources here, see the Dazzle 
+       documentation here: http://www.derkholm.net/thomas/dazzle/  -->
+
+</dazzle>

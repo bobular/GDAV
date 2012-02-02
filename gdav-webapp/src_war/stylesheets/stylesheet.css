@@ -1,0 +1,111 @@
+/* Javadoc style sheet */
+
+/* Define colors, fonts and other style attributes here to override the defaults */
+
+/* Page background color */
+body { background-color: #FFFFFF;
+       font-family: verdana, arial, helvetica, sans-serif;
+     }
+I { font-family: serif; }
+TH, TD { font-size: 10pt; }
+
+/* dark green 005500 */
+/* mid green BBEEBB */
+/* light green EFFEEF */
+/* grey EEEEEE */
+
+
+/* Headings */
+h1 { font-size: 140%; }
+h2 { font-size: 120%; margin-top: 10px;}
+h3 { font-size: 100%; margin-left: 8px;}
+/* search results page */
+
+div			{ position: absolute; /* border: 1px solid #F00; */ }
+div.logopanel		{ width: 100%; top: 15px; left: 9px; height: 200px; text-align: center; }
+div.leftpanel		{ background: #DDD; width: 18%; top: 5px; left: 5px; height: 98%; text-align: center; }
+div.menupanel		{ width: 170px; top: 110px; left: 10px;}
+div.mainpanel		{ width: 77%; top: 110px; left: 190px; font-size: 12px; }
+
+div.mainpanel p a.external:link { color: #020; }
+div.mainpanel p a.external:visited { color: #020; }
+
+
+
+
+div.seq			{ background: #FFF; padding-left: 40px;  font-family: courier; position: relative; font-size: 90%; max-height: 150px; overflow: auto; }
+
+
+a.inpage:link		{ color: #020; }
+a.inpage:visited	{ color: #020; }
+
+a:link			{ color: #020; }
+a:visited		{ color: #020; }
+
+a.menu:link		{ color: #020;  bottom: 10px;}
+a.menu:visited		{ color: #020;  bottom: 10px;}
+
+a.imgLink		{ border: none; }
+
+
+.gdavsitename { text-decoration: none; }
+
+
+p			{ width: 80%; margin-left: 2%; text-align: justify;}
+ol			{ width: 80%; margin-left: 2%; text-align: justify;}
+p.acknowledgement	{ width: 80%; margin-left: 0%; text-align: justify; font-size: 85%; margin-top: 50px;}
+
+
+img.VBlogo		{ right: 0px; top: 0px; border: none; position: absolute; z-index: 1; width: 213px; height: 40px; }
+img.GDAVlogo		{ left: 0px; top: 0px; border: none; position: absolute; z-index: 1; height: 100px; width: 150px; }
+
+form			{ padding-left: 5px; width: 100%; top: 50%; position: relative; z-index: 0;}
+
+
+table.modelSummary	{ background: #EEE; width: 100%; border: none; /*1px solid #000000;*/ }
+
+table.modelSummary th { background: #BEB; margin: 20px; padding: 2px; }
+table.modelSummary td { background: #EFFEEF; margin: 20px; padding: 2px; }
+
+
+.modelDetails		{ background: #FFF; } 
+table.modelDetails	{ border-spacing: 20px;}
+td.modelDetails		{ background: #FFF; margin: 20px; padding: 8px; }
+
+.annotation		{ background: #EEE; } 
+table.annotation	{ width: 97%; margin-left: 3%;}
+table.annotation th	{ background: #BEB; text-align: left; }
+table.annotation td	{ background: #EFFEEF; } 
+
+
+.alignment		{ background: #EEE; } 
+table.alignment		{ width: 97%; margin-left: 3%;}
+th.alignment		{ background: #BEB; text-align: left; }
+td.alignment		{ background: #EFFEEF; } 
+
+
+.submission		{ background: #EEE; } 
+table.submission	{ width: 100%; margin-bottom: 20px; }
+th.submission		{ background: #BEB; text-align: left; }
+td.submission		{ background: #EFFEEF; padding: 8px; } 
+
+/* Font used in left-hand frame lists */
+.FrameTitleFont   { font-size: 100%; font-family: Helvetica, Arial, sans-serif }
+.FrameHeadingFont { font-size:  90%; font-family: Helvetica, Arial, sans-serif }
+.FrameItemFont    { font-size:  90%; font-family: Helvetica, Arial, sans-serif }
+
+td.menu { font-weight: normal; indent: 10px;  }
+td.menusubhead { font-weight: bold; }
+
+
+/** insert custom annotation table column styling below, e.g.
+
+table.annotation th.genelink { width: 20%; }
+
+**/
+
+table.annotation th.halfwidth { width: 50%; }
+table.annotation th.thirdwidth { width: 33%; }
+table.annotation th.quarterwidth { width: 25%; }
+table.annotation th.fifthwidth { width: 20%; }
+

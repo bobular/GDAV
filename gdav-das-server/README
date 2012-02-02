@@ -1,0 +1,6 @@
+To build the webapp war simply run ant in this directory.  The war file will
+appear in this directory.
+
+It may be necessary to copy the latest version of gdav.jar into
+webapp/WEB-INF/lib/ first.
+

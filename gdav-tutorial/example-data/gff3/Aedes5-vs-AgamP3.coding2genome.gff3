@@ -1,0 +1,15 @@
+3R	exonerate:coding2genome	gene	33496909	33500187	16348	-	.	ID=gene000001;Name=TCLAA083948
+3R	exonerate:coding2genome	exon	33499973	33500187	.	-	.	ID=exon000001;Parent=gene000001
+3R	exonerate:coding2genome	exon	33498031	33499865	.	-	.	ID=exon000002;Parent=gene000001
+3R	exonerate:coding2genome	exon	33497644	33497952	.	-	.	ID=exon000003;Parent=gene000001
+3R	exonerate:coding2genome	exon	33496909	33497089	.	-	.	ID=exon000004;Parent=gene000001
+2R	exonerate:coding2genome	gene	54946304	54947673	6143	-	.	ID=gene000002;Name=TCLAA088857
+2R	exonerate:coding2genome	exon	54947523	54947673	.	-	.	ID=exon000005;Parent=gene000002
+2R	exonerate:coding2genome	exon	54947339	54947438	.	-	.	ID=exon000006;Parent=gene000002
+2R	exonerate:coding2genome	exon	54946304	54947258	.	-	.	ID=exon000007;Parent=gene000002
+3L	exonerate:coding2genome	gene	21659372	21661165	9141	+	.	ID=gene000003;Name=TCLAA104855
+3L	exonerate:coding2genome	exon	21659372	21661165	.	+	.	ID=exon000008;Parent=gene000003
+2R	exonerate:coding2genome	gene	51787946	51789994	7613	+	.	ID=gene000004;Name=TCLAA108437
+2R	exonerate:coding2genome	exon	51787946	51789994	.	+	.	ID=exon000009;Parent=gene000004
+X	exonerate:coding2genome	gene	11656322	11657470	7692	-	.	ID=gene000005;Name=TCLAA111852
+X	exonerate:coding2genome	exon	11656322	11657470	.	-	.	ID=exon000010;Parent=gene000005

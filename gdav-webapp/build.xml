@@ -1,0 +1,94 @@
+<project name="gdav" default="compile" basedir=".">
+
+	<property name="src.dir" value="${basedir}/src"/>
+	<property name="test.dir" value="${basedir}/test"/>
+
+	<property name="build.dir" value="${basedir}/build"/>
+	<property name="build.classes.dir" value="${build.dir}/classes"/>
+
+	<property name="buildwar.dir" value="${basedir}/src_war"/>
+
+	<property name="gdav.lib" value="${basedir}/lib/"/>
+	<property name="tomcat.lib" value="/usr/local/tomcat/lib/"/>
+	<property name="tomcat.apps.dir" value="/usr/local/tomcat/webapps/"/>
+
+	<!-- the build path -->
+
+	<path id="gdav.jars">
+		<fileset dir="${gdav.lib}">
+			<include name="**/*.jar"/>
+		</fileset>
+		<fileset dir="${tomcat.lib}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<path id="build.path">
+		<pathelement location="${build.classes.dir}"/>
+		<path refid="gdav.jars"/>
+	</path>
+	<!-- the test path -->
+
+  <target name="init">
+		<mkdir dir="${basedir}/build"/>
+  </target>
+
+	<target name="clean">
+		<delete dir="${buildwar.dir}/docs/api"/>
+		<delete dir="${basedir}/build"/>
+		<delete file="${basedir}/gdav.war"/>
+		<delete file="${basedir}/lib/gdav.jar"/>
+	</target>
+
+
+	<target name="clean_tomcat">
+		<delete dir="${tomcat.apps.dir}/gdav"/>
+		<delete file="${tomcat.apps.dir}/gdav.war"/>
+	</target>
+
+	<!-- compilation options -->
+
+	<target name="compile" depends="init,clean">
+		<mkdir dir="${build.classes.dir}"/>
+		<javac srcdir="${src.dir}"
+			destdir="${build.classes.dir}"
+			classpathref="build.path"
+			debug="on"
+		/>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${basedir}/lib/gdav.jar" basedir="${build.classes.dir}">
+		</jar>
+	</target>
+
+	<target name="javadoc" depends="">
+		<javadoc destdir="${buildwar.dir}/docs/api/" 
+			 author="true"
+			 >
+			<classpath>
+				<fileset dir="${gdav.lib}">
+					<include name="**/*.jar"/>
+				</fileset>
+				<fileset dir="${tomcat.lib}">
+					<include name="**/*.jar"/>
+				</fileset>			
+			</classpath>
+  			<fileset dir="${src.dir}" />
+		</javadoc>
+	</target>
+
+	
+	<target name="war" depends="jar,javadoc">
+		<war destfile="gdav.war" webxml="${buildwar.dir}/web.xml" basedir="${buildwar.dir}">
+			<exclude name="**/web.xml" />
+			<lib dir="${gdav.lib}">
+				<include name="*.jar"/>
+			</lib>
+		</war>
+	</target>
+
+	<target name="tomcat" depends="war,clean_tomcat">
+
+		<copy file="gdav.war" tofile="${tomcat.apps.dir}/gdav.war"/>
+	</target>
+</project>

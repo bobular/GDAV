@@ -1,0 +1,37 @@
+<config>
+        <!-- This will appear in the user's web browser title bar -->
+	<title>Example GDAV installation</title>
+
+        <!-- add an alignSpp block for each species/assembly      -->
+        <!-- you are aligning to                                  -->
+        <!-- the name refers to the assembly/species name you     -->
+        <!-- provided to load-alignments-from-gff3.pl             -->
+	<alignSpp name="AgamP3">
+		<hyperlink>http://agambiae.vectorbase.org/Genome/ContigView?l=####</hyperlink>
+	</alignSpp>
+
+        <!-- configure column display                             -->
+        <!-- name: column name from tab-delimited files           -->
+        <!--       (case insensitive)                             -->
+        <!-- display: true/false for show/hide                    -->
+        <!-- optional hyperlink element, configures linkout       -->
+	<col name="interpro ID" display="true">
+		<hyperlink>http://www.ebi.ac.uk/interpro/ISearch?query=####</hyperlink>
+	</col>
+
+        <!-- hide some columns                                    -->
+	<col name="date" display="false" />
+	<col name="query start" display="false" />
+	<col name="query end" display="false" />
+	<col name="true hit" display="false" />
+	
+	<col name="subject" display="true">
+		<hyperlink>http://www.vectorbase.org/Search/Keyword/?term=####</hyperlink>
+	</col>
+ 
+        <!-- links containing '&' must be URL-encoded (& -> &amp; instead)  -->
+	<col name="Genbank EST accession" display="true">
+		<hyperlink>http://www.ncbi.nlm.nih.gov/sites/entrez?cmd=Search&amp;db=nucest&amp;term=####</hyperlink>
+	</col>
+
+</config>

@@ -1,0 +1,21 @@
+<gdav>
+	<!-- the following is the URL of your tomcat server  -->
+	<!-- followed by the name of this web application    -->
+	<host>http://your.server.org:8080/gdav-example</host>
+
+	<!-- This is where the ${remoteheader} JSP variable is grabbed from 
+	<remoteheader>
+	  <url>http://www.vectorbase.org/includes/biomartHeaderAndFooter.php</url>
+	  <start>js_cookie_functions</start>
+	  <stop>Content Window</stop>
+	</remoteheader> -->
+
+	<db>
+		<!-- MySQL connection settings -->
+		<dbhost>localhost</dbhost>
+		<dbname>gdav_example_db</dbname>
+		<dbport>3306</dbport>
+		<dbuser>username</dbuser>
+		<dbpass>password</dbpass>
+	</db>
+</gdav>
