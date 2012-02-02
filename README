@@ -1,0 +1,29 @@
+GDAV is a simple set of tools for publishing EST, gene or protein
+annotations on your lab or institution's web server. You may process,
+annotate and align your sequences in any way you like. GDAV just
+requires that you provide three simple file formats, each using the
+same sequence identifiers:
+
+ o  One FASTA file of sequences
+ o  Tab-delimited file(s) of sequence annotations
+ o  GFF3 file(s) of genome alignments
+
+full details and installation instructions are available at http://www.vectorbase.org/Help/GDAV
+
+Authors: Bob MacCallum, Seth Redmond, Jesus Martinez-Barnetche
+
+Licence: GPL 3 - see gpl.txt
+
+The version imported to git corresponds to the 1.2.4 source code
+available here: http://funcgen.vectorbase.org/downloads/GDAV/
+
+Open source software attributions:
+
+Thanks to Thomas Down for making http://biojava.org/wiki/Dazzle available.
+
+Thanks also to:
+
+ o  Apache Commons http://commons.apache.org/
+ o  BioJava http://biojava.org/wiki/Main_Page
+ o  log4j http://logging.apache.org/log4j/1.2/
+ o  Display tag library http://www.displaytag.org/1.2/
